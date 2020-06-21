@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+$theme-colors: ("primary": #2EC4B6,
+    // "secondary": #A23E48,
+    // "light": #FFF275,
+    // "success": #6C8EAD);
+);
+
+:root {
+    --mainBlue: #2EC4B6;
+    --mainBeige: rgb(255, 191, 105, 0.5);
+    --mainDarkYellow: rgba(249, 228, 148, 0.5);
+    --mainLightGrey: rgb(238, 238, 238);
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+body {
+    font-family: "Kaushan Script", cursive !important;
+}
+
+.nav-link {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.cart-info {
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+.cart-info:hover{
+    background-color: var(--mainBlue);
+    border: 0.1rem solid white;
+    color: white;
+    transition: all 0.5s linear;
+
+}
+
+
+.banner-height {
+    background-attachment: fixed;
+    background: linear-gradient(var(--mainBeige), var(--mainBeige)), url("./images/patiss.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 69px);
+    position: relative;
+}
+
+
+.banner {
+    color: white;
+}
+
+.banner-title {
+    color: black;
+}
+
+.about-img-container {
+    position: relative;
+}
+
+.about-img-container::before{
+    content: "";
+    height: 100%;
+    outline: 0.5rem solid var(--mainBeige);
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+    transition: all 1s linear;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.about-img-container:hover::before {
+    top: 0;
+    right:0;
+}
+
+
+button {
+    letter-spacing: 1px;
+}
+
+
+.magasin {
+    background-color: var(--mainLightGrey);
+}
+
+
+.form-control {
+    border-color: var(--mainBlue) !important;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.card-item {
+    transition: all 0.3 linear;
+}
+
+.card-item:hover {
+    box-shadow: 0 10px 15px rgb(179, 175, 175);
+}
+
+.img-container {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container:hover .magasin-img {
+    transform: scale(1.2);
+}
+
+.magasin-img {
+    transition: all 1s ease-in-out;
+}
+
+.magasin-item-icon {
+    background-color: var(--mainBlue);
+    border-top-left-radius: 5px;
+    bottom: 0;
+    right: 0;
+    padding: 12px;
+    position: absolute;
+    transform: translate(100%, 100%);
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .magasin-item-icon {
+    transform: translate(0, 0)
+}    
+
+.magasin-item-icon:hover {
+    color: white;
+}
+
+.services {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("./images/pastries.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
