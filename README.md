@@ -1,4 +1,4 @@
-Ce project est une conception frontale réactive pour une pâtisserie.
+Ce projet est une conception frontale réactive pour une pâtisserie.
 
 Démo: https://focused-raman-fa464c.netlify.app/
 
